@@ -1,6 +1,7 @@
 package com.thoughtworks.continuinglearning;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.PrintStream;
@@ -27,12 +28,13 @@ public class BoardTest {
         verify(printStream).println(contains("1|"));
     }
 
-    @Test
+    @Ignore @Test
     public void shouldMarkBoardAtPositionOneWithX(){
         board.markBoard(1, "X");
-        
+
     }
 
+    @Ignore
     @Test
     public void shouldMarkBoardAtPositionTwoWithO(){
         board.markBoard(2, "O");
