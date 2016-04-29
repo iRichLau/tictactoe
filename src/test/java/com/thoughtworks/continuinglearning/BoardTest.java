@@ -28,15 +28,15 @@ public class BoardTest {
         verify(printStream).println(contains("1|"));
     }
 
-    @Ignore @Test
+    @Test
     public void shouldMarkBoardAtPositionOneWithX(){
         board.markBoard(1, "X");
-
+        verify(printStream).println(contains("X"));
     }
 
-    @Ignore
     @Test
     public void shouldMarkBoardAtPositionTwoWithO(){
         board.markBoard(2, "O");
+        verify(printStream).println(contains("O"));
     }
 }

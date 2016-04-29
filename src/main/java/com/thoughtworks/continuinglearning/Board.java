@@ -24,14 +24,18 @@ public class Board {
     }
 
     public void drawBoard() {
-        for(String number : grid) {
-            printStream.print(number + "|");
-        }
+        printStream.println(grid.get(0) + "|" + grid.get(1) + "|" + grid.get(2));
+        printStream.println("-----");
+        printStream.println(grid.get(3) + "|" + grid.get(4) + "|" + grid.get(5));
+        printStream.println("-----");
+        printStream.println(grid.get(6) + "|" + grid.get(7) + "|" + grid.get(8));
     }
+
 
     public void markBoard(int playerInput, String playerMarker) {
         int playerInputPosition = playerInput - 1;
         grid.set(playerInputPosition, playerMarker);
+        drawBoard();
         }
     }
 

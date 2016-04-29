@@ -12,10 +12,8 @@ public class Main {
         board.drawBoard();
         Player playerOne = new Player(bufferedReader, printStream, board, "X");
         playerOne.makeAMove();
-        board.drawBoard();
         Player playerTwo = new Player(bufferedReader, printStream, board, "O");
         playerTwo.makeAMove();
-        board.drawBoard();
 
     }
 }
